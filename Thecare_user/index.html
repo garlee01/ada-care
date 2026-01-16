@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title> 메인화면</title>
+  <link rel="stylesheet" href="/assets/css/hanasia.css"/>
+  <script defer src="/assets/js/partials.js"></script>
+</head>
+<body>
+  <div id="app-header"></div>
+  <main class="container">
+    
+<section class="card" style="padding:14px">
+  <div class="section-title">
+    <h2>배너</h2>
+    <span class="muted"></span>
+  </div>
+  <div id="banner-strip" class="banner-strip"></div>
+</section>
+
+<div class="grid home-grid" style="margin-top:14px">
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>뉴스</h2>
+      <a class="more-link" href="/pages/board.html?board=news">더보기 +</a>
+    </div>
+    <div id="mini-news"></div>
+  </section>
+
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>게시판</h2>
+      <a class="more-link" href="/pages/board.html?board=free">더보기 +</a>
+    </div>
+    <div id="mini-free"></div>
+  </section>
+
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>구인·구직</h2>
+      <a class="more-link" href="/pages/board.html?board=jobs">더보기 +</a>
+    </div>
+    <div id="mini-jobs"></div>
+  </section>
+
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>중고</h2>
+      <a class="more-link" href="/pages/board.html?board=used">더보기 +</a>
+    </div>
+    <div id="mini-used"></div>
+  </section>
+
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>부동산</h2>
+      <a class="more-link" href="/pages/board.html?board=estate">더보기 +</a>
+    </div>
+    <div id="mini-estate"></div>
+  </section>
+
+  <section class="card mini-card">
+    <div class="section-title">
+      <h2>광고</h2>
+      <a class="more-link" href="/pages/board.html?board=ads">더보기 +</a>
+    </div>
+    <div id="mini-ads"></div>
+  </section>
+</div>
+<section class="notice" style="margin-top:14px">
+  <b>보안 메모(중요)</b>
+  <div class="muted" style="margin-top:6px">
+    이 ZIP은 Cloudflare(Workers+D1+R2) 기준으로 바로 배포 가능한 MVP입니다. 로컬에서 API 없이도 데모(localStorage)로 동작하지만, 실제 배포는
+    서버에서 권한 체크 + DB RLS(예: Supabase) + 파일 업로드 스토리지 정책 + CSRF/XSS 방어가 필수예요.
+  </div>
+</section>
+
+<script type="module" src="/assets/js/home.js"></script>
+
+  </main>
+  <div id="app-footer"></div>
+</body>
+</html>
